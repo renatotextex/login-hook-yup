@@ -12,6 +12,6 @@ export const ButtonContainer = styled.button`
 
     &:hover {
         opacity: 0.6;
-        cursor:pointer;
+        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     }
 `
